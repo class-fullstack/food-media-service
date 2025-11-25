@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   return res.status(200).json(healthCheck);
 });
 
-//* Auth Routes
-router.use("/auth", require("./auth"));
+//* Media Routes
+router.use("/media", require("./media"));
 
 module.exports = router;

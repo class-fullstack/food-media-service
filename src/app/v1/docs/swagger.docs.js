@@ -5,10 +5,10 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Food Ordering System API",
+      title: "Food Media Service",
       version: "1.0.0",
       description:
-        "API documentation for Food Ordering System with RBAC, Auth, Menu, Order, Payment.",
+        "API documentation for Food Media Service update image,video,file,.",
     },
     servers: [
       {
