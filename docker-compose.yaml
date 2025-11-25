@@ -1,0 +1,21 @@
+services:
+  #* 1. Minio
+  minio:
+    container_name: minio_server
+    image: quay.io/minio/minio:RELEASE.2024-10-02T17-19-28Z
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    env_file:
+      - .env
+    volumes:
+      - food_minio_storage:/data
+    ports:
+      - "9000:9000" # S3 API
+      - "9001:9001" # MinIO Console
+
+volumes:
+  food_minio_storage:
+    driver: local

@@ -1,0 +1,102 @@
+# Node modules
+/node_modules/
+/bower_components/
+
+# Environment files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+*.log
+logs/
+.debug/
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+
+# Build output
+dist/
+build/
+tmp/
+temp/
+.cache/
+.next/
+.out/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Serverless
+.serverless/
+
+# PM2 ecosystem files
+pids
+pms/
+pm2.log
+dump.pm2
+
+# Parcel, Vite, Webpack
+.cache/
+.parcel-cache/
+.vite/
+vite.config.ts.timestamp*
+
+# Prisma
+prisma/migrations/dev.db
+prisma/dev.db
+prisma/*.db
+prisma/db.sqlite
+prisma/db.sqlite-journal
+
+# Docker
+docker-data/
+*.tar
+*.img
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and editors
+# .vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test output
+test-results/
+tests-output/
+
+# Optional: ignore lock files (choose only if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
