@@ -1,0 +1,51 @@
+# Bỏ node_modules local (trong image sẽ npm install lại)
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Test, coverage
+coverage
+.nyc_output
+jest.config.*
+*.test.js
+*.spec.js
+
+# Env & secrets (không copy vào image)
+.env
+.env.*
+!.env.example
+
+# Git / VCS
+.git
+.gitignore
+.gitattributes
+
+# IDE / Editor
+.vscode
+.idea
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker compose & stuff không cần trong image
+docker-compose.yml
+docker-compose.yaml
+docker-compose.override.yml
+makefile
+Makefile
+
+# Local data/volume folders
+data
+db_data
+postgres-data
+mongo-data
+redis-data

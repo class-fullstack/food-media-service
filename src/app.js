@@ -13,6 +13,7 @@ const AppHelpers = require("./helpers/app.helpers");
 const appConstants = require("./constants/app.constants");
 const v1Router = require("./app/v1/routes");
 const { swaggerUi, swaggerSpec } = require("./app/v1/docs/swagger.docs");
+const minioClient = require("./inits/minio.inits");
 
 const app = express();
 
@@ -29,6 +30,9 @@ app.use(
       : appConstants.MORGAN_FORMATS[1]
   )
 );
+
+//* Connect to Databases
+minioClient.testConnection();
 
 //* Group Versions
 const apiRouter = express.Router();
